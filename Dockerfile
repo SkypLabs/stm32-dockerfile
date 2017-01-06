@@ -1,5 +1,5 @@
 FROM docker.io/ubuntu:trusty
-MAINTAINER skyper@skyplabs.net
+MAINTAINER Paul-Emmanuel Raoul <skyper@skyplabs.net>
 
 ARG DEBIAN_FRONTEND=noninteractive
 
