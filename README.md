@@ -1,5 +1,7 @@
 # STM32 Development Environment
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/6902da542a5f4ea2b042255cff38c96a)](https://www.codacy.com/app/skyper/stm32-dockerfile?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=SkypLabs/stm32-dockerfile&amp;utm_campaign=Badge_Grade)
+
 This image provides a development environment to build software for the [STM32 microcontroller family][1].
 
 It contains the [open source version of the STMicroelectronics ST-LINK tools][2].
