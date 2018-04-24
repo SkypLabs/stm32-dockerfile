@@ -1,11 +1,13 @@
 FROM docker.io/ubuntu:trusty
-MAINTAINER Paul-Emmanuel Raoul <skyper@skyplabs.net>
+
+LABEL net.skyplabs.maintainer-name="Paul-Emmanuel Raoul"
+LABEL net.skyplabs.maintainer-email="skyper@skyplabs.net"
 
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update \
-    && apt-get install -y binutils-arm-none-eabi gcc-arm-none-eabi \
-    && apt-get install -y git make cmake autoconf libusb-1.0.0-dev
+    && apt-get install -y --no-install-recommends binutils-arm-none-eabi gcc-arm-none-eabi \
+    && apt-get install -y --no-install-recommends git make cmake autoconf libusb-1.0.0-dev
 
 RUN useradd -m dev
 USER dev
