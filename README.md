@@ -2,19 +2,19 @@
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/6902da542a5f4ea2b042255cff38c96a)](https://www.codacy.com/app/skyper/stm32-dockerfile?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=SkypLabs/stm32-dockerfile&amp;utm_campaign=Badge_Grade)
 
-This image provides a development environment to build software for the [STM32 microcontroller family][1].
+This image provides a development environment to build software for the [STM32 microcontroller family][stm32].
 
-It contains the [open source version of the STMicroelectronics ST-LINK tools][2].
+It contains the [open source version of the STMicroelectronics ST-LINK tools][stlink].
 
 ## How to
 
-To compile a project using a Makefile :
+To compile a project using a `Makefile`:
 
     docker run --rm -v <local path>:/home/dev/app docker.io/skyplabs/stm32
 
-*local path* refers to the folder on your host system which holds the source code of your application and containing a Makefile.
+*local path* refers to the folder on your host system which holds the source code of your application and containing a `Makefile`.
 
-To get into the container and then get access to the ST tools :
+To get a shell to the container and then get access to the ST tools:
 
     docker run -it --privileged -v /dev/bus/usb:/dev/bus/usb -v <local path>:/home/dev/app docker.io/skyplabs/stm32 /bin/bash
 
@@ -30,8 +30,8 @@ To get into the container and then get access to the ST tools :
 
 ## License
 
-[MIT][3]
+[MIT][mit]
 
- [1]: http://www.st.com/web/en/catalog/mmc/FM141/SC1169
- [2]: https://github.com/texane/stlink
- [3]: http://opensource.org/licenses/MIT
+ [stm32]: https://www.st.com/en/microcontrollers/stm32-32-bit-arm-cortex-mcus.html
+ [stlink]: https://github.com/texane/stlink
+ [mit]: http://opensource.org/licenses/MIT
