@@ -7,7 +7,9 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends binutils-arm-none-eabi gcc-arm-none-eabi \
-    && apt-get install -y --no-install-recommends git make cmake autoconf libusb-1.0.0-dev
+    && apt-get install -y --no-install-recommends git make cmake autoconf libusb-1.0.0-dev \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
 RUN useradd -m dev
 USER dev
