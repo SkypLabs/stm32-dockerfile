@@ -22,7 +22,7 @@ To get a shell to the container and then get access to the ST tools:
 
 ### *unknown chip id! 0xe0042000*
 
-* Short-circuit the two pins marked 'BOOT0' and 'VDD'
+* Short-circuit the two pins marked `BOOT0` and `VDD`
 * Reset the board
 * Erase the flash memory
 
